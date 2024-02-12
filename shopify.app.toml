@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "22f103417ee8c13872fd6fd3f5b45aa0"
+name = "jugando-ando"
+application_url = "https://theology-dv-coral-cinema.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "jugando-ando-cr.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://theology-dv-coral-cinema.trycloudflare.com/auth/callback",
+  "https://theology-dv-coral-cinema.trycloudflare.com/auth/shopify/callback",
+  "https://theology-dv-coral-cinema.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
